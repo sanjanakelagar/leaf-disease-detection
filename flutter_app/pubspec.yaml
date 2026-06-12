@@ -1,0 +1,70 @@
+name: leaf_disease_detection
+description: AI-powered mobile app for plant leaf disease detection and treatment recommendations.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # HTTP & API
+  http: ^1.1.0
+  dio: ^5.3.0
+  
+  # State Management
+  riverpod: ^2.4.0
+  flutter_riverpod: ^2.4.0
+  
+  # Database
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  
+  # Camera & Image Picker
+  camera: ^0.10.5
+  image_picker: ^1.0.4
+  
+  # Image Processing
+  image: ^4.0.17
+  
+  # UI & Charts
+  provider: ^6.0.0
+  fl_chart: ^0.63.0
+  shimmer: ^3.0.0
+  cached_network_image: ^3.3.0
+  
+  # Navigation
+  go_router: ^11.0.0
+  
+  # Utilities
+  intl: ^0.18.1
+  shared_preferences: ^2.2.0
+  uuid: ^4.0.0
+  
+  # Firebase (optional - for cloud sync)
+  firebase_core: ^2.24.0
+  firebase_storage: ^11.5.0
+  firebase_auth: ^4.16.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_linter: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
